@@ -1,7 +1,9 @@
+/*Default font for the website  */
 * {
     font-family: "Montserrat", sans-serif;
 }
 
+/* resetting styles */
 body {
     background-color: #f0ece2;
     margin: 0;
@@ -38,12 +40,21 @@ h3 {
     object-fit: cover;
 }
 
+/* header styling  */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
 
 /* Navigation Styling */
 
+
 .navigation {
     display: block;
-
 }
 
 nav ul {
@@ -53,9 +64,19 @@ nav ul {
     overflow: hidden;
 }
 
+nav li img {
+    width: 10%;
+    height: 10%;
+}
+
 nav li {
     float: inline-start;
+    margin-top: 1%;
     margin-right: 6%;
+}
+
+nav li:first-child {
+    margin-left: 6%;
 }
 
 nav li a {
@@ -64,15 +85,23 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 
 nav li a:hover {
-    background-color: black;
+    background-color: #8E4739;
     color: #f0ece2;
     transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-style: italic;
+    border-radius: 50%;
 }
 
 /* Main Body */
+
+.main-container h1 {
+    text-align: center;
+}
 
 main {
     display: block;
@@ -94,13 +123,37 @@ main p {
 }
 
 /* Footer */
+
 .footer-tab {
     background-color: black;
     width: 100%;
     color: #f0ece2;
     text-align: center;
-    position: fixed;
-    bottom: 0;
     font-size: small;
+    margin-top: 1%;
+    font-weight: 600;
+}
+
+.footer-tab a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* specials page */
+
+.product-container {
+    display: flex;
+    align-items: center;
     margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.product-image {
+    width: 50%;
+    height: 50%;
+    margin-right: 10px;
+}
+
+.product-description {
+    margin: 0;
 }
