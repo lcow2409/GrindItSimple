@@ -195,7 +195,43 @@ main p {
     .reasons ol {
         line-height: 2;
     }
+}
 
+/* Tablet View  */
+@media screen and (min-width:761px) and (max-width:1024px) {
+    .container {
+        text-align: center;
+    }
 
+    nav {
+        display: inline-block;
+    }
 
+    nav ul {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    nav li:first-child {
+        margin-left: 0;
+    }
+
+    nav li img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    nav li a {
+        padding: 10px 12px;
+    }
 }
