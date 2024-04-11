@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -31,12 +31,72 @@
                         <li><a href="specials.html">Specials</a></li>
                         <li><a href="training.html">Training</a></li>
                         <li><a href="media.html">Media</a></li>
-                        <li><a href="faqs.html">FAQ's</a></li>
+                        <!-- <li><a href="faqs.html">FAQ's</a></li> -->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
         </header>
     </div>
+    <h1 class="heading">Contact Us</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <ol>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="input-field" required>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-field" required>
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="input-field">
+                </li>
+                <li>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="input-field" required autofocus></textarea>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <div class="gender-options">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="male"> Male
+                            </label>
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="female"> Female
+                            </label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="100" class="input-field">
+                </li>
+                <li>
+                    <label for="newsletter">Subscribe to newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" class="input-checkbox">
+                </li>
+                <li>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" class="input-select" required>
+                        <option value="">Select</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </li>
+                <li>
+                    <div class="submit-btn">
+                        <button type="submit" class="btn">Submit Request</button>
+                        <button type="reset" class="btn">Reset Form</button>
+                    </div>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
 </body>
 
 </html>

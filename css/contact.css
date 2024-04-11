@@ -1,0 +1,669 @@
+/*Default font for the website  */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* resetting styles */
+body {
+    background-color: #f0ece2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylings for headings */
+h1 {
+    font-size: 2.5em;
+    color: brown
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* header styling  */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Navigation Styling */
+
+
+.navigation {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+
+nav li img {
+    width: 10%;
+    height: 10%;
+}
+
+nav li {
+    float: inline-start;
+    margin-top: 1%;
+    margin-right: 6%;
+}
+
+nav li:first-child {
+    margin-left: 6%;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    background-color: #8E4739;
+    color: #f0ece2;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-style: italic;
+    border-radius: 50%;
+}
+
+
+/* Main Body */
+
+.main-container h1 {
+    text-align: center;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer-tab {
+    background-color: black;
+    width: 100%;
+    color: #f0ece2;
+    text-align: center;
+    font-size: small;
+    margin-top: 1%;
+    font-weight: 600;
+}
+
+.footer-tab a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles for Contact Form */
+.heading {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+li:last-child {
+    margin-top: 15px;
+    text-align: center;
+    list-style: none;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: left;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: burlywood;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: left;
+}
+
+.gender-option {
+    margin-right: 20px;
+    /* Adjust as needed */
+}
+
+.input-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Mobile View */
+@media screen and (max-width:760px) {
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* Navigation styles */
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation ul li {
+        font-size: 1em;
+        background-color: #f0ece2;
+        margin-bottom: 5px;
+    }
+
+    nav li:first-child {
+        margin-left: 0;
+        margin-top: 2%;
+
+    }
+
+    nav li a:hover {
+        background-color: #8E4739;
+        color: #f0ece2;
+        transition: background-color 0.3s ease;
+        font-weight: 700;
+        font-style: italic;
+        border-radius: 0%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    /* Base styles for buttons */
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Submit button style */
+    .btn-submit {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Reset button style */
+    .btn-reset {
+        background-color: #f44336;
+        color: #fff;
+    }
+
+
+}
+
+/*Default font for the website  */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* resetting styles */
+body {
+    background-color: #f0ece2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylings for headings */
+h1 {
+    font-size: 2.5em;
+    color: brown
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* header styling  */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Navigation Styling */
+
+
+.navigation {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+
+nav li img {
+    width: 10%;
+    height: 10%;
+}
+
+nav li {
+    float: inline-start;
+    margin-top: 1%;
+    margin-right: 6%;
+}
+
+nav li:first-child {
+    margin-left: 6%;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    background-color: #8E4739;
+    color: #f0ece2;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-style: italic;
+    border-radius: 50%;
+}
+
+
+/* Main Body */
+
+.main-container h1 {
+    text-align: center;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer-tab {
+    background-color: black;
+    width: 100%;
+    color: #f0ece2;
+    text-align: center;
+    font-size: small;
+    margin-top: 1%;
+    font-weight: 600;
+}
+
+.footer-tab a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles for Contact Form */
+.heading {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+li:last-child {
+    margin-top: 15px;
+    text-align: center;
+    list-style: none;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: left;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: burlywood;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: left;
+}
+
+.gender-option {
+    margin-right: 20px;
+    /* Adjust as needed */
+}
+
+.input-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Mobile View */
+@media screen and (max-width:760px) {
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* Navigation styles */
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation ul li {
+        font-size: 1em;
+        background-color: #f0ece2;
+        margin-bottom: 5px;
+    }
+
+    nav li:first-child {
+        margin-left: 0;
+        margin-top: 2%;
+
+    }
+
+    nav li a:hover {
+        background-color: #8E4739;
+        color: #f0ece2;
+        transition: background-color 0.3s ease;
+        font-weight: 700;
+        font-style: italic;
+        border-radius: 0%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    /* Base styles for buttons */
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Submit button style */
+    .btn-submit {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Reset button style */
+    .btn-reset {
+        background-color: #f44336;
+        color: #fff;
+    }
+
+
+}
+
+/* Tablet View  */
+@media screen and (min-width: 763px) and (max-width: 1172px) {
+    nav {
+        white-space: nowrap;
+        /* Prevent line wrapping */
+        overflow-x: auto;
+        /* Enable horizontal scrolling if needed */
+    }
+
+    nav li {
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    nav li:first-child {
+        margin-left: 0;
+    }
+}
+
+
+/* Tablet View  */
+@media screen and (min-width:761px) and (max-width:1024px) {
+    .container {
+        text-align: center;
+    }
+
+    nav {
+        display: inline-block;
+    }
+
+    nav ul {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    nav li:first-child {
+        margin-left: 0;
+    }
+
+    nav li img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    nav li a {
+        padding: 10px 12px;
+    }
+
+    /* Base styles for buttons */
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Submit button style */
+    .btn-submit {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Reset button style */
+    .btn-reset {
+        background-color: #f44336;
+        color: #fff;
+    }
+}
